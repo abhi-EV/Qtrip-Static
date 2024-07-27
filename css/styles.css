@@ -1,0 +1,133 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+html,
+body {
+  position: relative;
+}
+
+body {
+  overflow-y: auto;
+  min-height: 100vh;
+}
+textarea:focus,
+input:focus {
+  outline: none;
+}
+a {
+  color: inherit !important;
+  text-decoration: none !important;
+}
+footer {
+  background: #f1f1f1;
+  width: 100%;
+  padding: 16px 0px;
+  color: #999;
+  vertical-align: bottom;
+  margin-top: 40px;
+  text-align: center;
+  /* width: 100%; */
+  /* height: 2.5rem;   */
+}
+
+.banner {
+  height: 500px;
+  width: 100%;
+  background: #999;
+  margin: 20px 0px;
+}
+
+.content {
+  padding: 20px 0px;
+}
+
+.tile {
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.tile img {
+  max-width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  transition: all 0.5s;
+}
+.tile img:hover {
+  filter: brightness(50%);
+  /* transform: scaleY(0.5); */
+  transform: scale(0.5s);
+}
+.tile-text {
+  position: absolute;
+  z-index: 1;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/assets/hero.jpg");
+    height: 50vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.hero-subheading {
+  font-size: 24px;
+  font-weight: 100;
+}
+.hero-input {
+  width: 80%;
+  height: 50px;
+  padding: 16px;
+  border-radius: 8px;
+  border: none;
+}
+
+.nav-link {
+  margin-right: 36px;
+}
+.adventure-card {
+  height: auto;
+  width: 100%;
+  
+}
+.adventure-card img {
+  width: 100%;
+  height: 10.1rem;
+  object-fit: cover;
+
+}
+.adventure-card img:hover {
+  filter: brightness(50%);
+  transform: scale(0.5s);
+}
+
+.adventure-detail-card {
+  /* / */
+}
+
+.adventure-card-image {
+  width: 100%;
+  height: 100%;
+}
+.adventure-card-image:hover {
+
+}
+.experience-content ul li {
+  margin-left: 16px;
+  padding: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  #reservation {
+    width: 400px;
+    position: fixed;
+  }
+}
